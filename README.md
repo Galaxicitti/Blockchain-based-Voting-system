@@ -8,7 +8,7 @@ This project is a decentralized voting system built using blockchain technology.
 ## Project Structure
 - **contracts/**: Contains the Solidity smart contract for the voting system.
 - **migrations/**: Contains migration scripts for deploying smart contracts.
-- **frontend/**: Contains the React application for the user interface.
+- **voting-client/**: Contains the React application for the user interface.
 - **server.js**: Node.js server for handling backend requests.
 
 ## Prerequisites
