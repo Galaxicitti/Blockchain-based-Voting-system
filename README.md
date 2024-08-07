@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Blockchain Voting System
 
-## Available Scripts
+## Overview
+This project is a decentralized voting system built using blockchain technology. The purpose of this system is to provide a secure, transparent, and tamper-proof voting mechanism. The project uses Ethereum smart contracts to manage the voting process and uses a web interface for interaction.
 
-In the project directory, you can run:
+## Project Structure
+- **contracts/**: Contains the Solidity smart contract for the voting system.
+- **migrations/**: Contains migration scripts for deploying smart contracts.
+- **frontend/**: Contains the React application for the user interface.
+- **server.js**: Node.js server for handling backend requests.
 
-### `npm start`
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- Node.js installed on your machine
+- Truffle framework installed globally (`npm install -g truffle`)
+- Ganache for local blockchain development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/blockchain-voting-system.git
+   cd blockchain-voting-system
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install dependencies:
+   ```bash
+   npm install
+   cd frontend
+   npm install
+   ```
 
-### `npm test`
+## Usage
+1. Start Ganache:
+   ```bash
+   ganache-cli
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Deploy the smart contract:
+   ```bash
+   truffle migrate
+   ```
 
-### `npm run build`
+3. Start the backend server:
+   ```bash
+   node server.js
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the frontend application:
+   ```bash
+   cd frontend
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Open your browser and navigate to `http://localhost:3001` to access the voting interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Known Issues
+- **Frontend-Backend Configuration**: We are currently facing issues with the frontend and backend integration. The smart contract works correctly, but we are unable to fully deploy the system due to configuration issues. 
 
-### `npm run eject`
+## Future Improvements
+- Fix frontend-backend integration issues to enable full deployment.
+- Add more features such as admin panel, candidate registration, and voting analytics.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is licensed under the MIT License.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+- Galaxy Rawat
+- Nishchya Pratap Singh
+- Saarthak Srivastava
+- Sameer Dhakad
